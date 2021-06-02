@@ -116,3 +116,16 @@ details[open] summary {
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  details {
+    width: 90%;
+  }
+}
