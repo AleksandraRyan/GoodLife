@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -111,6 +112,89 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
+mark {
+  background-color: aqua;
+  padding: 3px;
+}
+
+/* Article */
+.forecast {
+  margin: 0;
+  padding: 0.3rem;
+  background-color: #eee;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.day-forecast {
+  border: thin solid #333;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -45px;
+  padding: 5px 0;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+
+/* Aside */
+
+aside {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border: thin #666 solid;
+  border-radius: 5px;
+  padding: 20px;
+  width: 96%;
+  margin: 60px auto;
+}
+
+aside img {
+  width: 40%;
+}
+
+aside p {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.heading {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  font-size: 25px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+section > p {
+  text-align: center;
+}
+
+section h2 {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .flex {
     flex-wrap: wrap;
@@ -125,5 +209,17 @@ details[open] summary {
 
   details {
     width: 90%;
+  }
+
+  aside {
+    flex-wrap: wrap;
+  }
+
+  aside img {
+    width: 100%;
+  }
+
+  .heading {
+    display: none;
   }
 }
